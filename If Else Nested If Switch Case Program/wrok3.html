@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let a,b,c,j;
+        a=parseInt(prompt("enter a number"));
+        b=parseInt(prompt("enter b number"));
+        c=parseInt(prompt("enter c number"));
+        d=parseInt(prompt("enter j number"));
+
+        if(a>b){
+            if (a>c) {
+                if (a>j) {
+                    document.write("a is max");
+                } else {
+                    document.write("j is max");
+                }  
+            } else {
+                if (c>j) {
+                    document.write("c is max");        
+                } else {
+                    document.write("j is max");    
+                } 
+            }
+        } else{
+            if (b>c) {
+                if (b>j) {
+                    document.write("b is max");
+                    
+                } else{
+                    document.write("j is max");
+                } 
+            } else {
+                if (c>j) {
+                    document.write("c is max");
+                } else {
+                    document.write("j is max");    
+                } 
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
