@@ -1,0 +1,34 @@
+<!-- 2)Count no of keys in object [using forin loop] -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count no of keys in object</title>
+</head>
+
+<body>
+
+    
+   
+    <script>
+        obj={
+            "id":"1",
+            "role": "admin",
+            "salary": "50000",
+            "description": "JBP"
+        }
+        let count = 0 
+        for(key in obj){
+           count++; 
+        }
+        
+        document.write("keys are:",count);
+
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!-- 1) create object of user & includes members as follow
+property -- username,surname,age,salary
+qualification includes 10th,12th,bca,mca using array
+method - display() to print all information about user. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+   
+    <script>
+        class User {
+            constructor(username, surname, age, salary, qualification) {
+                this.username = username;
+                this.surname = surname;
+                this.age = age;
+                this.salary = salary;
+                this.qualification = qualification;
+            }
+            display() {
+                document.writeln("<br>","username :", this.username, "<br />", "surname : ", this.surname, "<br />", "age : ", this.age, "<br />",
+                    "salary : ", this.salary, "<br>",);
+                document.write("Qualifications: ");
+                this.qualification.forEach(elem => {
+                    document.write(elem, " ");
+                });
+            }
+        }
+
+        obj = new User();
+        obj.username = "JIGAR";
+        obj.surname = "patel";
+        obj.age = 20;
+        obj.salary = "$5000";
+        obj.qualification = ["10th", "12th", "  BCA", "MCA"];
+        obj.display();
+
+       
+
+    </script>
+</body>
+
+</html>
